@@ -41,3 +41,5 @@ View all servers in a table format
 Delete unwanted servers
 See when servers were added
 The changes maintain security through RLS policies and proper access checks
+
+# FOR SUPPORT COME AT https://discord.gg/CR7s2aEf9T
