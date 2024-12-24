@@ -27,7 +27,7 @@
 
 ## Now for admin mode it is kind of tricky
 
-( for this, fucking use youre supabase, replace the cred in supabase.ts )
+( for this, fucking use youre supabase, replace the url and key in .env )
 
 To make someone an admin:
 
