@@ -1,66 +1,13 @@
 # Minecraft Server Status
-<<<<<<< HEAD
-=======
-
-A beautiful React application for tracking and managing Minecraft server statuses. Built with React, Supabase, and Tailwind CSS.
->>>>>>> d0c2d21440c8409314063509060f51c242f606c5
 
 A beautiful React application for tracking and managing Minecraft server statuses. Built with React, Supabase, and Tailwind CSS.
 
-![Screenshot](https://source.unsplash.com/random/1200x630/?minecraft)
+![image](https://github.com/user-attachments/assets/91db381b-c0a5-467e-9415-be9d01b1b47e)
 
-## Features
+![image](https://github.com/user-attachments/assets/9eda0f66-cdef-4882-b781-fd20d1c5f694)
 
-<<<<<<< HEAD
-- 🎮 Real-time Minecraft server status monitoring
-- 👥 User authentication and authorization
-- ⬆️ Upvote/downvote system for servers
-- 🎨 Multiple theme options
-- 📱 Responsive design
-- 👑 Admin panel for server management
-- 🏷️ Category-based filtering
+![image](https://github.com/user-attachments/assets/ccf53bcf-c191-4bd5-89e2-aa58adf905b0)
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 16+
-- npm or yarn
-- Supabase account
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/minecraft-server-status.git
-   cd minecraft-server-status
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the root directory:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-### Database Setup
-
-1. Create a new Supabase project
-2. Run the migration files in the `supabase/migrations` directory
-3. Set up email authentication in your Supabase dashboard
-
-## Configuration
-
-=======
 ## Features
 
 - 🎮 Real-time Minecraft server status monitoring
@@ -111,7 +58,6 @@ A beautiful React application for tracking and managing Minecraft server statuse
 
 ## Configuration
 
->>>>>>> d0c2d21440c8409314063509060f51c242f606c5
 ### Themes
 
 The application comes with several built-in themes:
@@ -170,22 +116,15 @@ To make a user an admin:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d0c2d21440c8409314063509060f51c242f606c5
 ## Acknowledgments
 
 - [React](https://reactjs.org/)
 - [Supabase](https://supabase.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
-<<<<<<< HEAD
-- [Lucide Icons](https://lucide.dev/)
-=======
 - [Lucide Icons](https://lucide.dev/)
 
 
 ### For Support; https://discord.gg/CR7s2aEf9T
 
 ## Do Not use This without giving me credits 
->>>>>>> d0c2d21440c8409314063509060f51c242f606c5
