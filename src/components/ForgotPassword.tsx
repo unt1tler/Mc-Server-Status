@@ -21,7 +21,7 @@ export function ForgotPassword({ onBack }: ForgotPasswordProps) {
       });
       
       if (error) throw error;
-      toast.success('Password reset instructions sent to your email!');
+      toast.success('Password reset instructions sent! Please check your email.');
       onBack();
     } catch (error: any) {
       toast.error(error.message);

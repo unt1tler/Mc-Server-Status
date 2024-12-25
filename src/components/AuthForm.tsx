@@ -30,12 +30,12 @@ export function AuthForm() {
           options: {
             emailRedirectTo: `${window.location.origin}/auth/callback`,
             data: {
-              email_confirm_sent: true
+              email_confirm: true
             }
           }
         });
         if (error) throw error;
-        toast.success('Please check your email to confirm your account!');
+        toast.success('Verification email sent! Please check your inbox.');
       }
     } catch (error: any) {
       toast.error(error.message);

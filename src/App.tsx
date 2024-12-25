@@ -4,7 +4,11 @@ import { ServerCard } from './components/ServerCard';
 import { AuthForm } from './components/AuthForm';
 import { CategoryFilter } from './components/CategoryFilter';
 import { AdminPanel } from './components/AdminPanel';
+import { ThemeSelector } from './components/ThemeSelector';
+import { ServerStats } from './components/ServerStats';
+import { SearchBar } from './components/SearchBar';
 import { useServers } from './hooks/useServers';
+import { useTheme } from './lib/ThemeContext';
 import { Gamepad2, Plus } from 'lucide-react';
 import { Toaster } from 'react-hot-toast';
 
@@ -14,23 +18,27 @@ export default function App() {
     categories,
     selectedCategory,
     setSelectedCategory,
-    handleVote
+    handleVote,
+    handleSearch
   } = useServers();
 
+  const { theme } = useTheme();
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900">
+    <div className={`min-h-screen bg-gradient-to-br ${theme.bgGradient}`}>
       <div className="container mx-auto px-4 py-8">
         <header className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm">
-              <Gamepad2 size={32} className="text-purple-400" />
+            <div className={`p-3 rounded-xl ${theme.cardBg} backdrop-blur-sm`}>
+              <Gamepad2 size={32} className={`text-${theme.accent}-400`} />
             </div>
-            <h1 className="text-3xl font-bold text-white">MC Server Status</h1>
+            <h1 className={`text-3xl font-bold ${theme.textPrimary}`}>MC Server Status</h1>
           </div>
           <div className="flex items-center gap-4">
+            <ThemeSelector />
             <Link
               to="/add-server"
-              className="flex items-center gap-2 px-4 py-2 bg-purple-500 rounded-lg text-white hover:bg-purple-600 transition-colors"
+              className={`flex items-center gap-2 px-4 py-2 bg-${theme.accent}-500 rounded-lg text-white hover:bg-${theme.accent}-600 transition-colors`}
             >
               <Plus size={20} />
               Add Server
@@ -39,6 +47,9 @@ export default function App() {
           </div>
         </header>
 
+        <ServerStats />
+        <SearchBar onSearch={handleSearch} />
+        
         <CategoryFilter
           categories={categories}
           selectedCategory={selectedCategory}
