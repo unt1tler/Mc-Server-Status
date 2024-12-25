@@ -116,9 +116,15 @@ To make a user an admin:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
 ## Acknowledgments
 
 - [React](https://reactjs.org/)
 - [Supabase](https://supabase.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide Icons](https://lucide.dev/)
+
+
+### For Support; https://discord.gg/CR7s2aEf9T
+
+## Do Not use This without giving me credits 
